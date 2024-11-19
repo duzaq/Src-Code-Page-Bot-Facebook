@@ -10,7 +10,7 @@ app.use(express.json());
 
 const VERIFY_TOKEN = 'pagebot';
 const PAGE_ACCESS_TOKEN = fs.readFileSync('token.txt', 'utf8').trim();
-const COMMANDS_PATH = path.join(__dirname, 'commands2');
+const COMMANDS_PATH = path.join(__dirname, 'commands');
 
 // Webhook verification
 app.get('/webhook', (req, res) => {
